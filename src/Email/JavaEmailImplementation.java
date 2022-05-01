@@ -8,9 +8,9 @@ public class JavaEmailImplementation{
 
     public void sendEmail(){
 
-        final String username = "achyuth.varma1@gmail.com";
+        final String username = "wecare.aed@gmail.com";
 
-        final String password = "egwtkkswbqgnfrro";
+        final String password = "zphuuoqmfrfauejo";
 
 
         Properties prop = new Properties();
@@ -56,11 +56,11 @@ public class JavaEmailImplementation{
 
     }
 
-    public void sendEmail(String sendTo, String message){
+    public void sendEmail(String to, String fromType, String text){
 
-        final String username = "achyuth.varma1@gmail.com";
+        final String username = "wecare.aed@gmail.com";
 
-        final String password = "egwtkkswbqgnfrro";
+        final String password = "zphuuoqmfrfauejo";
 
 
         Properties prop = new Properties();
@@ -72,6 +72,8 @@ public class JavaEmailImplementation{
         prop.put("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
         prop.put("mail.smtp.ssl.protocols", "TLSv1.2");
 
+
+//        prop.put("mail.smtp.starttls.enable", "true"); //TLS
 
         Session session = Session.getInstance(prop,
                 new javax.mail.Authenticator() {
@@ -86,22 +88,20 @@ public class JavaEmailImplementation{
             message.setFrom(new InternetAddress(username));
             message.setRecipients(
                     Message.RecipientType.TO,
-                    InternetAddress.parse(sendTo)
+                    InternetAddress.parse(to)
             );
-            message.setSubject("Test Email From Java");
+            message.setSubject("Test Email From Java:"+ fromType);
             message.setText("" +
-                    "<h1> "+message+" </h1>" +
+                     text+
                     "\n ");
 
             Transport.send(message);
 
-            System.out.println("Done Sending Email");
+            System.out.println("Done");
 
         }
         catch (MessagingException e){
             e.printStackTrace();
         }
-
-    }
 
 }
