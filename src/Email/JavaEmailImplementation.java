@@ -73,8 +73,6 @@ public class JavaEmailImplementation{
         prop.put("mail.smtp.ssl.protocols", "TLSv1.2");
 
 
-//        prop.put("mail.smtp.starttls.enable", "true"); //TLS
-
         Session session = Session.getInstance(prop,
                 new javax.mail.Authenticator() {
                     protected PasswordAuthentication getPasswordAuthentication() {
