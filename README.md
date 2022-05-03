@@ -5,5 +5,5 @@
 -   Hemanth Reddy Yaramala (002922147)
 -   Sairam Mantravadi (002951479)
 
-## Project: We care Charity Organization
+## Project: We care Charity system
 
