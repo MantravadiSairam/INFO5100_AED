@@ -1,4 +1,4 @@
-# INFO5100_AED
+# INFO5100_Application Engineering and Development
 
 ## Teammates
 -   Achyuth Varma Penmetcha (002960283)
