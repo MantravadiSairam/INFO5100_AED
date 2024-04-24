@@ -30,7 +30,10 @@ Food Management: has admin who accepts order request & assigns delivery man to d
 ​
 ## Architecture Diagram:
 
-<img width="322" alt="image" src="https://github.com/MantravadiSairam/INFO5100_AED/assets/99050861/807878e0-4dd1-4747-943e-7eda69853809">
+![image](https://github.com/MantravadiSairam/INFO5100_AED/assets/99050861/64670877-3ae1-4286-ac8f-ecbd5dff7811)
+
+Draw.io link: https://app.diagrams.net/#G12Mmx7FCzlvI4gmZPerWhO459pGAulrpr#%7B%22pageId%22%3A%22J4NMu-Z0TTa1L9rZYjS4%22%7D
+
 
 
 ## Sequence Diagram:
